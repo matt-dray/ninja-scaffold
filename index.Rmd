@@ -3,6 +3,7 @@ pagetitle: "Ninjutsu hacking"
 output:
   xaringan::moon_reader:
     css: [default, ninjutsu, custom.css, custom-fonts.css]
+    self-contained: true
     lib_dir: libs
     seal: false
     nature:
