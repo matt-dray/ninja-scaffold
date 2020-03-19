@@ -1,5 +1,5 @@
 ---
-pagetitle: "Ninjutsu hacking"
+pagetitle: "Ninja scaffold"
 output:
   xaringan::moon_reader:
     css: [default, ninjutsu, custom.css, custom-fonts.css]
@@ -14,14 +14,14 @@ output:
 ---
 layout: true
 
-```{r, include=FALSE}
+```{r, prep-pkgs, include=FALSE}
 library(dplyr)
 library(knitr)
 library(ggplot2)
 library(icon)
 ```
 
-```{r, echo=FALSE, fig.width=15, fig.height=3}
+```{r prep-plot, include=FALSE}
 plot <- ggplot(iris, aes(Sepal.Width, Sepal.Length, colour = Species)) +
   geom_point()
 ```
