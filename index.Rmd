@@ -1,0 +1,110 @@
+---
+pagetitle: "Ninjutsu hacking"
+output:
+  xaringan::moon_reader:
+    css: [default, ninjutsu, custom.css, custom-fonts.css]
+    lib_dir: libs
+    seal: false
+    nature:
+      ratio: "16:9"
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+layout: true
+
+```{r, include=FALSE}
+library(dplyr)
+library(knitr)
+library(ggplot2)
+library(icon)
+```
+
+```{r, echo=FALSE, fig.width=15, fig.height=3}
+plot <- ggplot(iris, aes(Sepal.Width, Sepal.Length, colour = Species)) +
+  geom_point()
+```
+
+---
+class: split-title hide-slide-number
+
+.row[.content[
+# `r fa("user-ninja", size = 3)`
+]]
+
+.row[.content[
+  # Ninja scaffolding
+  ## Splitting [{xaringan}](https://slides.yihui.org/xaringan/#1) slides into sections
+  ### Adapting [Emi Tanaka](https://emitanaka.org/)'s [Ninjutsu](https://emitanaka.org/ninja-theme/themes/kunoichi/kunoichi-theme-example.html#7)
+  
+  `r fa('twitter')` [mattdray](https://twitter.com/mattdray)
+  `r fa('github')` [matt-dray](https://github.com/matt-dray)
+  `r fa('globe')` [rostrum.blog](https://www.rostrum.blog/) 
+]]
+
+---
+class: split-main1
+
+.row[.content[
+  ### A page with title and footer bars
+]]
+
+.row[.content[
+```{r, echo=FALSE, fig.width=16}
+print(plot)
+```
+]]
+
+.row[.content[
+  Footer
+]]
+
+---
+class: split-main2
+
+.row[.content[
+  ### This page has _two_ rows in the body area
+]]
+
+.row[.content[
+This slide is split into four rows that are all 100% of the width of the page:
+
+* the title and footer bars
+* two rows in the main body (text in this one, plot in the one below)
+]]
+
+.row[.content.center[
+```{r, echo=FALSE, fig.width=15, fig.height=3}
+print(plot)
+```
+]]
+
+.row[
+  Footer
+]
+
+---
+class: split-main2
+
+.row[.content[
+  ### The lower body row is now split vertically!
+]]
+
+.row[
+Here is some text for this row that stretches aaaaall the way across the page and wraps down to the next line.
+]
+
+.row[.content[
+.split-two[
+  .column[
+`r kable(head(iris), format="html")`
+  ]
+  .column.center[
+`r fa("r-project", size = 5)` 
+  ]
+]
+]]
+
+.row[
+  Footer
+]
