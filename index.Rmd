@@ -1,5 +1,5 @@
 ---
-pagetitle: "Ninja scaffold"
+pagetitle: "Demo: ninja scaffold"
 output:
   xaringan::moon_reader:
     css: [default, ninjutsu, custom.css, custom-fonts.css]
@@ -28,6 +28,11 @@ library(ggplot2)
 library(icon)
 ```
 
+```{r, prep-plot}
+plot <- ggplot(iris, aes(Sepal.Width, Sepal.Length, colour = Species)) +
+  geom_point()
+```
+
 ---
 class: split-title hide-slide-number
 
@@ -36,26 +41,26 @@ class: split-title hide-slide-number
 ]]
 
 .row[.content[
-# Ninja scaffolding
+# Demo: Ninja Scaffold
 ## Splitting [{xaringan}](https://slides.yihui.org/xaringan/#1) slides into sections
 ### Adapting [Emi Tanaka](https://emitanaka.org/)'s [Ninjutsu](https://emitanaka.org/ninja-theme/themes/kunoichi/kunoichi-theme-example.html#7)
 
 `r fa('twitter')` [mattdray](https://twitter.com/mattdray)
-`r fa('github')` [matt-dray](https://github.com/matt-dray)
-`r fa('globe')` [rostrum.blog](https://www.rostrum.blog/) 
+`r fa('github')` [slide source](https://github.com/matt-dray/ninja-scaffold/)
+`r fa('globe')` [blogpost](https://www.rostrum.blog/) 
 ]]
 
 ---
 class: split-main1
 
 .row[.content[
-### A page with title and footer bars
+### Header and footer with main body between
 ]]
 
 .row[.content[
+
 ```{r, plot-large, fig.width=16}
-ggplot(iris, aes(Sepal.Width, Sepal.Length, colour = Species)) +
-  geom_point()
+print(plot)
 ```
 ]]
 
@@ -66,22 +71,20 @@ ggplot(iris, aes(Sepal.Width, Sepal.Length, colour = Species)) +
 class: split-main2
 
 .row[.content[
-### This slide has _two_ rows in the body area
+### Main body split in two horizontally
 ]]
 
 .row[.content[
 This slide is split into four rows that are all 100% of the width of the page:
 
-1. The title bar
-1. An upper row in the main body
-1. A lower row in the main body
-1. The footer bar
+* the title (top) and footer (bottom) bars
+* the main body area (this the upper row, there's a plot in the one below)
+
 ]]
 
 .row[.content.center[
 ```{r, plot-wide, fig.width=15, fig.height=3}
-ggplot(iris, aes(Sepal.Width, Sepal.Length, colour = Species)) +
-  geom_point()
+print(plot)
 ```
 ]]
 
@@ -92,11 +95,13 @@ ggplot(iris, aes(Sepal.Width, Sepal.Length, colour = Species)) +
 class: split-main2
 
 .row[.content[
-### The lower body row is now split vertically!
+### Vertical split in the second row of the main body
 ]]
 
 .row[.content[
-Here is some text for this row that stretches aaaaall the way across the page and wraps down to the next line.
+This is just like the previous slide, but with one important difference: the lower row of this main body area is split in half vertically.
+
+This makes it easier to palace the table to the left and the icon to the right.
 ]]
 
 .row[.content[
