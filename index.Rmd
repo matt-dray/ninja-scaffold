@@ -47,7 +47,7 @@ class: split-title hide-slide-number
 
 `r fa('twitter')` [mattdray](https://twitter.com/mattdray)
 `r fa('github')` [slide source](https://github.com/matt-dray/ninja-scaffold/)
-`r fa('globe')` [blogpost](https://www.rostrum.blog/) 
+`r fa('globe')` [blogpost](https://www.rostrum.blog/2020/03/22/ninja-scaffold/) 
 ]]
 
 ---
