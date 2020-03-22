@@ -18,6 +18,8 @@ layout: true
 
 
 
+
+
 ---
 class: split-title hide-slide-number
 
@@ -26,35 +28,34 @@ class: split-title hide-slide-number
 ]]
 
 .row[.content[
-  # Ninja scaffolding
-  ## Splitting [{xaringan}](https://slides.yihui.org/xaringan/#1) slides into sections
-  ### Adapting [Emi Tanaka](https://emitanaka.org/)'s [Ninjutsu](https://emitanaka.org/ninja-theme/themes/kunoichi/kunoichi-theme-example.html#7)
-  
-  <i class="fab  fa-twitter "></i> [mattdray](https://twitter.com/mattdray)
-  <i class="fab  fa-github "></i> [matt-dray](https://github.com/matt-dray)
-  <i class="fas  fa-globe "></i> [rostrum.blog](https://www.rostrum.blog/) 
+# Ninja scaffolding
+## Splitting [{xaringan}](https://slides.yihui.org/xaringan/#1) slides into sections
+### Adapting [Emi Tanaka](https://emitanaka.org/)'s [Ninjutsu](https://emitanaka.org/ninja-theme/themes/kunoichi/kunoichi-theme-example.html#7)
+
+<i class="fab  fa-twitter "></i> [mattdray](https://twitter.com/mattdray)
+<i class="fab  fa-github "></i> [matt-dray](https://github.com/matt-dray)
+<i class="fas  fa-globe "></i> [rostrum.blog](https://www.rostrum.blog/) 
 ]]
 
 ---
 class: split-main1
 
 .row[.content[
-  ### A page with title and footer bars
+### A page with title and footer bars
 ]]
 
 .row[.content[
-![](index_files/figure-html/unnamed-chunk-1-1.png)&lt;!-- --&gt;
+&lt;img src="index_files/figure-html/unnamed-chunk-1-1.png" width="1152" /&gt;
 ]]
 
 .row[.content[
-  Footer
 ]]
 
 ---
 class: split-main2
 
 .row[.content[
-  ### This page has _two_ rows in the body area
+### This page has _two_ rows in the body area
 ]]
 
 .row[.content[
@@ -65,18 +66,17 @@ This slide is split into four rows that are all 100% of the width of the page:
 ]]
 
 .row[.content.center[
-![](index_files/figure-html/unnamed-chunk-2-1.png)&lt;!-- --&gt;
+&lt;img src="index_files/figure-html/unnamed-chunk-2-1.png" width="1080" /&gt;
 ]]
 
-.row[
-  Footer
-]
+.row[.content[
+]]
 
 ---
 class: split-main2
 
 .row[.content[
-  ### The lower body row is now split vertically!
+### The lower body row is now split vertically!
 ]]
 
 .row[
@@ -85,7 +85,7 @@ Here is some text for this row that stretches aaaaall the way across the page an
 
 .row[.content[
 .split-two[
-  .column[
+.column[.content[
 &lt;table&gt;
  &lt;thead&gt;
   &lt;tr&gt;
@@ -143,23 +143,72 @@ Here is some text for this row that stretches aaaaall the way across the page an
 &lt;/table&gt;
 
 
-  ]
-  .column.center[
+]]
+.column.center[.content[
 <i class="fab  fa-r-project fa-5x "></i> 
-  ]
+]]
 ]
 ]]
 
-.row[
-  Footer
+.row[.content[
+]]
+
+---
+class: split-main1 with-thick-border border-black
+
+.row[.content[
+### The class for this page is `split-main1`
+]]
+
+.row[.content[
+Black bars indicate the borders for each row.
+]]
+
+.row[.content[
+]]
+
+---
+class: split-main2 with-thick-border border-black
+
+.row[.content[
+### `split-main2`
+]]
+
+.row[.content[
+]]
+
+.row[.content.center[
+]]
+
+.row[.content[
+]]
+
+---
+class: split-main2 with-thick-border border-black
+
+.row[.content[
+### `split-main2` with `split-two` on third row
+]]
+
+.row[.content[
+]]
+
+.row[.content[
+.split-two[
+.column[
 ]
+.column.center[.content[
+]]
+]
+]]
+
+.row[.content[
+]]
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
 <script>var slideshow = remark.create({
 "ratio": "16:9",
-"highlightStyle": "github",
-"highlightLines": true,
 "countIncrementalSlides": false
 });
 if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
@@ -226,24 +275,7 @@ if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
       links[i].target = '_blank';
     }
   }
-})();
-// adds .remark-code-has-line-highlighted class to <pre> parent elements
-// of code chunks containing highlighted lines with class .remark-code-line-highlighted
-(function(d) {
-  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
-  const preParents = [];
-  const findPreParent = function(line, p = 0) {
-    if (p > 1) return null; // traverse up no further than grandparent
-    const el = line.parentElement;
-    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
-  };
-
-  for (let line of hlines) {
-    let pre = findPreParent(line);
-    if (pre && !preParents.includes(pre)) preParents.push(pre);
-  }
-  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
-})(document);</script>
+})();</script>
 
 <script>
 slideshow._releaseMath = function(el) {

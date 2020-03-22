@@ -16,7 +16,10 @@
   padding-right: 60px;
 }
 
-.content > footer-text { font-size: 5px; padding: 0;}
+.remark-slide-number {
+  font-size: 11px;
+  color: var(--color-alt);
+}
 
 a { color: var(--color-a); }
 
