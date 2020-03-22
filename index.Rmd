@@ -114,14 +114,23 @@ Here is some text for this row that stretches aaaaall the way across the page an
 ]
 
 ---
-class: split-main1 with-thick-border border-black
+class: split-title hide-slide-number with-thick-border border-black
 
 .row[.content[
-### The class for this page is `split-main1`
 ]]
 
 .row[.content[
-Black bars indicate the borders for each row.
+# Class `split-title`
+]]
+
+---
+class: split-main1 with-thick-border border-black
+
+.row[.content[
+### Class `split-main1`
+]]
+
+.row[.content[
 ]]
 
 .row[
@@ -131,7 +140,7 @@ Black bars indicate the borders for each row.
 class: split-main2 with-thick-border border-black
 
 .row[.content[
-### `split-main2`
+### Class `split-main2`
 ]]
 
 .row[.content[
@@ -147,7 +156,7 @@ class: split-main2 with-thick-border border-black
 class: split-main2 with-thick-border border-black
 
 .row[.content[
-### `split-main2` with `split-two` on third row
+### Class `split-main2` with `split-two` on third row
 ]]
 
 .row[.content[
