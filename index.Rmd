@@ -3,6 +3,7 @@ pagetitle: "Ninja scaffold"
 output:
   xaringan::moon_reader:
     css: [default, ninjutsu, custom.css, custom-fonts.css]
+    self_contained: yes
     lib_dir: libs
     seal: false
     nature:
