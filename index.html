@@ -18,8 +18,6 @@ layout: true
 
 
 
-
-
 ---
 class: split-title hide-slide-number
 
@@ -45,32 +43,34 @@ class: split-main1
 ]]
 
 .row[.content[
-&lt;img src="index_files/figure-html/unnamed-chunk-1-1.png" width="1152" /&gt;
+&lt;img src="index_files/figure-html/plot-large-1.png" width="1152" /&gt;
 ]]
 
-.row[.content[
-]]
+.row[
+]
 
 ---
 class: split-main2
 
 .row[.content[
-### This page has _two_ rows in the body area
+### This slide has _two_ rows in the body area
 ]]
 
 .row[.content[
 This slide is split into four rows that are all 100% of the width of the page:
 
-* the title and footer bars
-* two rows in the main body (text in this one, plot in the one below)
+1. The title bar
+1. An upper row in the main body
+1. A lower row in the main body
+1. The footer bar
 ]]
 
 .row[.content.center[
-&lt;img src="index_files/figure-html/unnamed-chunk-2-1.png" width="1080" /&gt;
+&lt;img src="index_files/figure-html/plot-wide-1.png" width="1080" /&gt;
 ]]
 
-.row[.content[
-]]
+.row[
+]
 
 ---
 class: split-main2
@@ -79,9 +79,9 @@ class: split-main2
 ### The lower body row is now split vertically!
 ]]
 
-.row[
+.row[.content[
 Here is some text for this row that stretches aaaaall the way across the page and wraps down to the next line.
-]
+]]
 
 .row[.content[
 .split-two[
@@ -150,8 +150,8 @@ Here is some text for this row that stretches aaaaall the way across the page an
 ]
 ]]
 
-.row[.content[
-]]
+.row[
+]
 
 ---
 class: split-main1 with-thick-border border-black
@@ -164,8 +164,8 @@ class: split-main1 with-thick-border border-black
 Black bars indicate the borders for each row.
 ]]
 
-.row[.content[
-]]
+.row[
+]
 
 ---
 class: split-main2 with-thick-border border-black
@@ -180,8 +180,8 @@ class: split-main2 with-thick-border border-black
 .row[.content.center[
 ]]
 
-.row[.content[
-]]
+.row[
+]
 
 ---
 class: split-main2 with-thick-border border-black
@@ -202,14 +202,15 @@ class: split-main2 with-thick-border border-black
 ]
 ]]
 
-.row[.content[
-]]
+.row[
+]
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
 <script>var slideshow = remark.create({
 "ratio": "16:9",
-"countIncrementalSlides": false
+"countIncrementalSlides": false,
+"slideNumberFormat": "%current%"
 });
 if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
   window.dispatchEvent(new Event('resize'));
